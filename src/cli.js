@@ -7,7 +7,7 @@ const askQuestion = (text) => {
 const getAnswer = (text) => readlineSync.question(text);
 
 const askAndGetName = () => {
-  console.log('Welcome to the Brain Games');
+  console.log('Welcome to the Brain Games!');
 
   const name = getAnswer('May I have your name? ');
 
