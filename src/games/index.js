@@ -1,2 +1,3 @@
-export { evenGame } from './evenGame.js';
-export { calcGame } from './calcGame.js';
+export { default as evenGame } from './evenGame.js';
+export { default as calcGame } from './calcGame.js';
+export { default as gcdGame } from './gcdGame.js';

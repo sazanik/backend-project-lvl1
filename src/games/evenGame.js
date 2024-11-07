@@ -1,13 +1,13 @@
-import evenCheck from '../utils/evenCheck.js';
 import { BOOLEAN_TO_ANSWER_MAP } from '../constants/index.js';
 import { askQuestion, getAnswer, getResponseAfterRound } from '../cli.js';
+import { checkEven } from '../utils/index.js';
 
-const evenGame = () => {
+export default () => {
   const num = Math.round(Math.random() * 1000);
 
   askQuestion(num);
 
-  const isNumEven = evenCheck(num);
+  const isNumEven = checkEven(num);
 
   const userAnswer = getAnswer('Your answer: ');
   const rightAnswer = BOOLEAN_TO_ANSWER_MAP[isNumEven];
@@ -19,5 +19,3 @@ const evenGame = () => {
 
   return isUserRight;
 };
-
-export { evenGame };

@@ -2,7 +2,7 @@ import { askQuestion, getAnswer, getResponseAfterRound } from '../cli.js';
 
 const operators = ['+', '-', '*'];
 
-const calcGame = () => {
+export default () => {
   const a = Math.round(Math.random() * 10);
   const b = Math.round(Math.random() * 10);
 
@@ -22,5 +22,3 @@ const calcGame = () => {
 
   return isUserRight;
 };
-
-export { calcGame };
