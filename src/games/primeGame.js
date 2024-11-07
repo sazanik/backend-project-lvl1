@@ -1,16 +1,16 @@
-import { BOOLEAN_TO_ANSWER_MAP } from '../constants/index.js';
 import { askQuestion, getAnswer, getResponseAfterRound } from '../cli.js';
-import { isEven } from '../utils/index.js';
+import { isPrime } from '../utils/index.js';
+import { BOOLEAN_TO_ANSWER_MAP } from '../constants/index.js';
 
 export default () => {
   const num = Math.round(Math.random() * 1000);
 
   askQuestion(num);
 
-  const isNumEven = isEven(num);
+  const isNumPrime = isPrime(num);
 
   const userAnswer = getAnswer('Your answer: ');
-  const rightAnswer = BOOLEAN_TO_ANSWER_MAP[isNumEven];
+  const rightAnswer = BOOLEAN_TO_ANSWER_MAP[isNumPrime];
 
   const isUserRight = userAnswer === rightAnswer;
   const resultString = getResponseAfterRound(isUserRight, userAnswer, rightAnswer);
