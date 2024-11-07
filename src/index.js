@@ -13,17 +13,15 @@ class BrainGames {
 
     console.log(description);
 
-    const answers = [];
-
     for (let i = 0; i < this.attemptsCount; i += 1) {
-      answers.push(game());
+      if (!game()) {
+        this.sympathize(this.name);
+
+        return;
+      }
     }
 
-    if (answers.every(Boolean)) {
-      this.congratulate(this.name);
-    } else {
-      this.sympathize(this.name);
-    }
+    this.congratulate(this.name);
   }
 }
 
