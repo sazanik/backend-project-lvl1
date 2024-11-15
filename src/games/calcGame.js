@@ -1,12 +1,14 @@
+import _ from 'lodash';
+
 import { askQuestion, getAnswer, getResponseAfterRound } from '../cli.js';
 
 const operators = ['+', '-', '*'];
 
 export default () => {
-  const a = Math.round(Math.random() * 10);
-  const b = Math.round(Math.random() * 10);
+  const a = _.random(0, 10);
+  const b = _.random(0, 10);
 
-  const operator = operators[Math.floor(Math.random() * operators.length)];
+  const operator = operators[_.random(0, operators.length - 1)];
   const expression = `${a} ${operator} ${b}`;
 
   askQuestion(expression);

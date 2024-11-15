@@ -1,9 +1,11 @@
+import _ from 'lodash';
+
 import { askQuestion, getAnswer, getResponseAfterRound } from '../cli.js';
 import { isPrime } from '../utils/index.js';
 import { BOOLEAN_TO_ANSWER_MAP } from '../constants/index.js';
 
 export default () => {
-  const num = Math.round(Math.random() * 1000);
+  const num = _.random(1, 1000);
 
   askQuestion(num);
 

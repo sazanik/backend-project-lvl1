@@ -1,9 +1,11 @@
+import _ from 'lodash';
+
 import { askQuestion, getAnswer, getResponseAfterRound } from '../cli.js';
 import { findGCD } from '../utils/index.js';
 
 export default () => {
-  const a = Math.round(Math.random() * 100);
-  const b = Math.round(Math.random() * 100);
+  const a = _.random(1, 100);
+  const b = _.random(1, 100);
 
   askQuestion(`${a} ${b}`);
 

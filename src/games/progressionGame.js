@@ -1,12 +1,14 @@
+import _ from 'lodash';
+
 import { askQuestion, getAnswer, getResponseAfterRound } from '../cli.js';
 
 export default () => {
-  const start = Math.round(Math.random() * 30);
-  const step = Math.round(Math.random() * 20);
+  const start = _.random(0, 30);
+  const step = _.random(1, 20);
   const length = 10;
 
   const progression = Array(length).fill(start).map((value, index) => start + index * step);
-  const targetIndex = Math.floor(Math.random() * length);
+  const targetIndex = _.random(0, length - 1);
   const copyProgression = [...progression];
 
   copyProgression[targetIndex] = '..';
