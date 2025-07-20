@@ -1,8 +1,7 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/sazanik/backend-project-lvl1/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/sazanik/backend-project-lvl1/actions)
 [![lint-check](https://github.com/sazanik/backend-project-lvl1/actions/workflows/lint-check.yml/badge.svg?event=push)](https://github.com/sazanik/backend-project-lvl1/actions/workflows/lint-check.yml)
-
-[![Maintainability](https://api.codeclimate.com/v1/badges/9ff520ee5368a3db6146/maintainability)](https://codeclimate.com/github/sazanik/backend-project-lvl1/maintainability)
+[![Maintainability](https://qlty.sh/gh/sazanik/projects/frontend-project-46/maintainability.svg)](https://qlty.sh/gh/sazanik/projects/frontend-project-46)
 
 # Brain Games
 
